@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { addTodo, removeOne, clearTodo } from './features/todoSlice'
 
-const Stuff = () => {
+const Todo = () => {
     const items = useSelector((state) => state.todos.items)
     const dispatch = useDispatch()
     const [input, setInput] = useState('')
@@ -28,4 +28,4 @@ const Stuff = () => {
     )
 }
 
-export default Stuff
+export default Todo
